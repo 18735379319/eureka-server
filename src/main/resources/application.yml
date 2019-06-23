@@ -1,0 +1,26 @@
+
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka-server
+
+logging:
+  file: logs/eureka.log
+#  level: info
+
+
+
+eureka:
+  instance:
+    appname: server1
+    prefer-ip-address: true
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+        defaultZone: http://182.61.53.74:8090/eureka/
+
+
+
